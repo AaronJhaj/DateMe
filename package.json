@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "nodemon": "^1.19.3",
+    "express-session": "^1.16.2",
+    "connect-flash": "^0.1.1",
+    "mongoose": "^5.7.1",
+    "express-ejs-layouts": "^2.5.0",
+    "ejs": "^2.7.1",
+    "passport-local": "^1.0.0",
+    "passport": "^0.4.0",
+    "bcryptjs": "^2.4.3",
+    "bcrypt": "^3.0.6",
+    "express": "latest",
+    "body-parser": "latest"
+  }
+}

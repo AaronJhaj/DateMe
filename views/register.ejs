@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>DateMe</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="/register.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="container full-height-grow">
+
+
+    <header class="main-header">
+      <a href="/" class="brand">
+    
+        <div class="brand-name"><span class="accent-color">date</span>me</div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="/users/login">log in</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="register-main-section">
+        <h1 class="register-text">join the <span class="accent-color">fun.</span></h1>
+      <% include ./partials/messages %>
+      <form action="/users/register" method="POST" class="register-form">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input
+            type="name"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Enter Name"
+            value="<%= typeof name != 'undefined' ? name : '' %>"
+          />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="Enter Email"
+            value="<%= typeof email != 'undefined' ? email : '' %>"
+          />
+        </div>
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="form-control"
+            placeholder="Create Password"
+            value="<%= typeof password != 'undefined' ? password : '' %>"
+          />
+        </div>
+        <div class="input-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            name="password2"
+            class="form-control"
+            placeholder="Confirm Password"
+            value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+          />
+        </div>
+        <button type="submit" class="btn">
+          Register
+        </button>
+      </form>
+      
+    </div>
+    </section>
+    <div class="homepage-circle-1"></div>
+    <div class="homepage-circle-2"></div>
+    <div class="homepage-circle-3"></div>
+  </body>
+</html>
